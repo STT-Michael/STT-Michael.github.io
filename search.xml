@@ -2,20 +2,22 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/2021/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <url>/2020/hello-world/</url>
+    <content><![CDATA[<h2 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h2><p>这是我第一次用Hexo，来写博客。说来惭愧，从2018年开始写东西，但是如今下来也没有留下什么痕迹。</p>
+<p>最开始写blog，用的是大名鼎鼎的的WordPress，不过觉得太冗余了，用来做商城不错，但是用来做blog就有点不太合适了。</p>
+<p>之后就用了国人的Typecho，简洁轻量，对于喜欢Markdown写blog的我来说，比WP用起来舒爽千倍，不吃服务器，算是入门首选的blog系统了。</p>
+<p>所谓大道至简嘛，越到后面就越想要简单点的东西，于是开始用Hexo进行记录我的生活。</p>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>我用的是JerryC大佬的<a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a>主题，主要是好看而且文档非常详细我个人非常喜欢并且强烈推荐。关于这个主题，还得加一篇来当作工具书用。</p>
+<p>当然也有很多其他优秀的Hexo主题,就不一一列举了。</p>
+<p><em>END</em></p>
 ]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客记录</tag>
+        <tag>butterfly</tag>
+      </tags>
   </entry>
 </search>
