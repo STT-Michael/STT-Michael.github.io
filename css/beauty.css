@@ -10,11 +10,6 @@
     background: transparent !important;
 }
 
-/* 博主昵称颜色 */
-.author-info__name {
-    color: #ff7242;
-}
-
 /* 首页中间打字效果上方 */
 #page-header #site-title {
     font-size: 3em;
