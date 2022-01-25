@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>数据库系统笔记01</title>
-    <url>/2021/database-1/</url>
-    <content><![CDATA[<h2 id="01-怎么理解数据库？"><a href="#01-怎么理解数据库？" class="headerlink" title="01 怎么理解数据库？"></a>01 怎么理解数据库？</h2><p>简单而言，数据库【DataBase】即存放数据的仓库。一般工程情况下，数据库为关系数据库，可简单认为是一张张有关联关系的表【Table】的集合。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/table%E7%9A%84%E6%9E%84%E6%88%90.jpg" alt="table的构成.jpg"></p>
-<h2 id="02-数据库系统的组成？"><a href="#02-数据库系统的组成？" class="headerlink" title="02 数据库系统的组成？"></a>02 数据库系统的组成？</h2><p>从本质上来讲，数据库系统是为了外部的人服务的，即通过应用程序来实现价值的。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%9E%84%E6%88%90.jpg" alt="数据库系统构成.jpg"></p>
-<h2 id="03-数据库语言如何作用？"><a href="#03-数据库语言如何作用？" class="headerlink" title="03 数据库语言如何作用？"></a>03 数据库语言如何作用？</h2><p>一条数据库语言语句相当于一条或者多条高级语言语句；数据库语言可以嵌入高级语言中使用。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E4%BD%9C%E7%94%A8.jpg" alt="数据库系统作用.jpg"></p>
-<h2 id="04-数据库系统标准结构？"><a href="#04-数据库系统标准结构？" class="headerlink" title="04 数据库系统标准结构？"></a>04 数据库系统标准结构？</h2><p>数据库的三级模式按照外中里三层化分为外模式、（概念）模式、内模式，其中模式二字也可换为视图。模式和视图都可理解为数据的表现。<br>外模式为应用用户所看到和操作的数据的结构描述，是片面以及不完整的；（概念）模式为全局的数据结构描述，有着数据整体的本质关系；内模式是数据存储方面的结构描述。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%89%E7%BA%A7%E6%A8%A1%E5%BC%8F.jpg" alt="数据库三级模式.jpg"><br>两层映像的作用其实都是将数据的概念模式（或者说视图），由概念往外或者往内转换，这是一个比较好理解的点，因为一个概念是非常不方便操作的。<br>所以对外转换（E-C mapping）便于用户观察和使用；对内转换（C-I mapping）便于计算机存储和处理。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E4%B8%A4%E5%B1%82%E6%98%A0%E5%83%8F.jpg" alt="两层映像.jpg"></p>
-<h2 id="05-标准结构的意义？"><a href="#05-标准结构的意义？" class="headerlink" title="05 标准结构的意义？"></a>05 标准结构的意义？</h2><p>数据库存在的意义本质上都是为了对外使用，所以尽量要使对外使用（即应用程序）相对稳定。所以当概念模式以及内部模式有变化时，都可以通过改变E-C或者C-I mapping来保证不需要改变外部模式。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%A0%87%E5%87%86%E7%BB%93%E6%9E%84%E7%9A%84%E4%BD%9C%E7%94%A8.jpg" alt="标准结构的作用.jpg"></p>
-<h2 id="06-数据模型和模式的关系？"><a href="#06-数据模型和模式的关系？" class="headerlink" title="06 数据模型和模式的关系？"></a>06 数据模型和模式的关系？</h2><p>数据模型，是一种对于模式描述统一的模型，包括：数据结构（模式）、操作和约束。<br>以关系模型为例，所有模式可以抽象化为一张张表的形式（即数据结构）。数据模型是模式结构的抽象，模式是数据本身结构形式的抽象。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B.jpg" alt="数据模型.jpg"></p>
-<h2 id="07-数据模型的三大表现形式？"><a href="#07-数据模型的三大表现形式？" class="headerlink" title="07 数据模型的三大表现形式？"></a>07 数据模型的三大表现形式？</h2><p>主要学习最为经典的关系数据模型。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E4%B8%89%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B.jpg" alt="三大经典数据模型.jpg"></p>
-<h2 id="08-关系是什么？"><a href="#08-关系是什么？" class="headerlink" title="08 关系是什么？"></a>08 关系是什么？</h2><p>既然我们学的是关系数据模型，那么就应该搞清楚关系是什么。关系其实就是一种规范化的二维表格。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E8%A1%A8%E7%9A%84%E7%BB%93%E6%9E%84.jpg" alt="表的结构.jpg"></p>
-<h2 id="09-域和笛卡尔积？"><a href="#09-域和笛卡尔积？" class="headerlink" title="09 域和笛卡尔积？"></a>09 域和笛卡尔积？</h2><p>域，是一组相同数据属性的数据集合，给一个命名就是属性。<br>基数，就是这个域下的元素的个数。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E5%9F%9F.jpg" alt="域.jpg"><br>笛卡尔积，为一组域（多个属性）的所有组合。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF.jpg" alt="笛卡尔积.jpg"><br>关系的严格定义，就是笛卡尔积中的有意义的元素。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E5%85%B3%E7%B3%BB.jpg" alt="关系.jpg"></p>
-<h2 id="10-关系与关系模型？"><a href="#10-关系与关系模型？" class="headerlink" title="10 关系与关系模型？"></a>10 关系与关系模型？</h2><p>关系模式写法上为是只记属性，而关系写法上包含了所有数据的值。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B.jpg" alt="关系模型.jpg"><br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%A8%A1%E5%9E%8B.jpg" alt="模型.jpg"></p>
-<h2 id="11-关系的特性？"><a href="#11-关系的特性？" class="headerlink" title="11 关系的特性？"></a>11 关系的特性？</h2><ol>
-<li>关系的列是同质，即列中分量来自于同一域，属于同一类型的数据。</li>
-<li>列位置互换性，行位置互换性，关系不是以位置而区分的。</li>
-<li>关系两个元组不能相同，因为关系是数学模型，集合中不能有两个相同元素。（现实中表可以）</li>
-<li>属性不可分性（关系第一范式。）</li>
-</ol>
-<p><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E7%AC%AC%E4%B8%80%E8%8C%83%E5%BC%8F.jpg" alt="第一范式.jpg"></p>
-<h2 id="12-候选码、主码和主属性关系？"><a href="#12-候选码、主码和主属性关系？" class="headerlink" title="12 候选码、主码和主属性关系？"></a>12 候选码、主码和主属性关系？</h2><p>候选码有多个，主码为候选码中的一个，主属性是所有候选码包含的属性，可以是多个属性组合。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E5%80%99%E9%80%89%E7%A0%81.jpg" alt="候选码.jpg"><br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E4%B8%BB%E7%A0%81.jpg" alt="主码.jpg"><br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E4%B8%BB%E5%B1%9E%E6%80%A7.jpg" alt="主属性.jpg"></p>
-<h2 id="13-外码是什么？"><a href="#13-外码是什么？" class="headerlink" title="13 外码是什么？"></a>13 外码是什么？</h2><p>一个非常好理解的概念。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E5%A4%96%E7%A0%81.jpg" alt="外码.jpg"></p>
-<h2 id="14-关系模型完整性？"><a href="#14-关系模型完整性？" class="headerlink" title="14 关系模型完整性？"></a>14 关系模型完整性？</h2><p>实体完整性：主码不能为空值。<br>参照完整性：关系中一个外码与另一个关系中主码一一对应，则不能出现不存在对应的情况，可以为空值。<br>用户自定义完整性：用户自己设定的完整性规则。</p>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>数据库</tag>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>恋词笔记 Unit1</title>
     <url>/2021/english-unit1/</url>
     <content><![CDATA[<h2 id="state-状态、州、陈述、规定"><a href="#state-状态、州、陈述、规定" class="headerlink" title="state 状态、州、陈述、规定"></a>state 状态、州、陈述、规定</h2><h3 id="形近"><a href="#形近" class="headerlink" title="形近"></a>形近</h3><p>statute 法令、法规<br>statistic 统计值<br>statistical 统计的<br>stationary 固定的<br>statement 陈述、说明（正式的）<br>understatement 保守的陈述<br>overstate 夸大<br>statesman 政治家<br>estate 房地产、身份、地位<br>devastate 毁灭、破坏<br>devastating 毁灭性的<br>workstation 工作台<br>status 地位、身份</p>
@@ -63,9 +31,41 @@
         <category>学习</category>
       </categories>
       <tags>
-        <tag>笔记</tag>
         <tag>英语</tag>
+        <tag>笔记</tag>
         <tag>单词</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据库系统笔记01</title>
+    <url>/2021/database-1/</url>
+    <content><![CDATA[<h2 id="01-怎么理解数据库？"><a href="#01-怎么理解数据库？" class="headerlink" title="01 怎么理解数据库？"></a>01 怎么理解数据库？</h2><p>简单而言，数据库【DataBase】即存放数据的仓库。一般工程情况下，数据库为关系数据库，可简单认为是一张张有关联关系的表【Table】的集合。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/table%E7%9A%84%E6%9E%84%E6%88%90.jpg" alt="table的构成.jpg"></p>
+<h2 id="02-数据库系统的组成？"><a href="#02-数据库系统的组成？" class="headerlink" title="02 数据库系统的组成？"></a>02 数据库系统的组成？</h2><p>从本质上来讲，数据库系统是为了外部的人服务的，即通过应用程序来实现价值的。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%9E%84%E6%88%90.jpg" alt="数据库系统构成.jpg"></p>
+<h2 id="03-数据库语言如何作用？"><a href="#03-数据库语言如何作用？" class="headerlink" title="03 数据库语言如何作用？"></a>03 数据库语言如何作用？</h2><p>一条数据库语言语句相当于一条或者多条高级语言语句；数据库语言可以嵌入高级语言中使用。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E4%BD%9C%E7%94%A8.jpg" alt="数据库系统作用.jpg"></p>
+<h2 id="04-数据库系统标准结构？"><a href="#04-数据库系统标准结构？" class="headerlink" title="04 数据库系统标准结构？"></a>04 数据库系统标准结构？</h2><p>数据库的三级模式按照外中里三层化分为外模式、（概念）模式、内模式，其中模式二字也可换为视图。模式和视图都可理解为数据的表现。<br>外模式为应用用户所看到和操作的数据的结构描述，是片面以及不完整的；（概念）模式为全局的数据结构描述，有着数据整体的本质关系；内模式是数据存储方面的结构描述。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%89%E7%BA%A7%E6%A8%A1%E5%BC%8F.jpg" alt="数据库三级模式.jpg"><br>两层映像的作用其实都是将数据的概念模式（或者说视图），由概念往外或者往内转换，这是一个比较好理解的点，因为一个概念是非常不方便操作的。<br>所以对外转换（E-C mapping）便于用户观察和使用；对内转换（C-I mapping）便于计算机存储和处理。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E4%B8%A4%E5%B1%82%E6%98%A0%E5%83%8F.jpg" alt="两层映像.jpg"></p>
+<h2 id="05-标准结构的意义？"><a href="#05-标准结构的意义？" class="headerlink" title="05 标准结构的意义？"></a>05 标准结构的意义？</h2><p>数据库存在的意义本质上都是为了对外使用，所以尽量要使对外使用（即应用程序）相对稳定。所以当概念模式以及内部模式有变化时，都可以通过改变E-C或者C-I mapping来保证不需要改变外部模式。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%A0%87%E5%87%86%E7%BB%93%E6%9E%84%E7%9A%84%E4%BD%9C%E7%94%A8.jpg" alt="标准结构的作用.jpg"></p>
+<h2 id="06-数据模型和模式的关系？"><a href="#06-数据模型和模式的关系？" class="headerlink" title="06 数据模型和模式的关系？"></a>06 数据模型和模式的关系？</h2><p>数据模型，是一种对于模式描述统一的模型，包括：数据结构（模式）、操作和约束。<br>以关系模型为例，所有模式可以抽象化为一张张表的形式（即数据结构）。数据模型是模式结构的抽象，模式是数据本身结构形式的抽象。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B.jpg" alt="数据模型.jpg"></p>
+<h2 id="07-数据模型的三大表现形式？"><a href="#07-数据模型的三大表现形式？" class="headerlink" title="07 数据模型的三大表现形式？"></a>07 数据模型的三大表现形式？</h2><p>主要学习最为经典的关系数据模型。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E4%B8%89%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B.jpg" alt="三大经典数据模型.jpg"></p>
+<h2 id="08-关系是什么？"><a href="#08-关系是什么？" class="headerlink" title="08 关系是什么？"></a>08 关系是什么？</h2><p>既然我们学的是关系数据模型，那么就应该搞清楚关系是什么。关系其实就是一种规范化的二维表格。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E8%A1%A8%E7%9A%84%E7%BB%93%E6%9E%84.jpg" alt="表的结构.jpg"></p>
+<h2 id="09-域和笛卡尔积？"><a href="#09-域和笛卡尔积？" class="headerlink" title="09 域和笛卡尔积？"></a>09 域和笛卡尔积？</h2><p>域，是一组相同数据属性的数据集合，给一个命名就是属性。<br>基数，就是这个域下的元素的个数。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E5%9F%9F.jpg" alt="域.jpg"><br>笛卡尔积，为一组域（多个属性）的所有组合。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF.jpg" alt="笛卡尔积.jpg"><br>关系的严格定义，就是笛卡尔积中的有意义的元素。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E5%85%B3%E7%B3%BB.jpg" alt="关系.jpg"></p>
+<h2 id="10-关系与关系模型？"><a href="#10-关系与关系模型？" class="headerlink" title="10 关系与关系模型？"></a>10 关系与关系模型？</h2><p>关系模式写法上为是只记属性，而关系写法上包含了所有数据的值。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B.jpg" alt="关系模型.jpg"><br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E6%A8%A1%E5%9E%8B.jpg" alt="模型.jpg"></p>
+<h2 id="11-关系的特性？"><a href="#11-关系的特性？" class="headerlink" title="11 关系的特性？"></a>11 关系的特性？</h2><ol>
+<li>关系的列是同质，即列中分量来自于同一域，属于同一类型的数据。</li>
+<li>列位置互换性，行位置互换性，关系不是以位置而区分的。</li>
+<li>关系两个元组不能相同，因为关系是数学模型，集合中不能有两个相同元素。（现实中表可以）</li>
+<li>属性不可分性（关系第一范式。）</li>
+</ol>
+<p><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E7%AC%AC%E4%B8%80%E8%8C%83%E5%BC%8F.jpg" alt="第一范式.jpg"></p>
+<h2 id="12-候选码、主码和主属性关系？"><a href="#12-候选码、主码和主属性关系？" class="headerlink" title="12 候选码、主码和主属性关系？"></a>12 候选码、主码和主属性关系？</h2><p>候选码有多个，主码为候选码中的一个，主属性是所有候选码包含的属性，可以是多个属性组合。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E5%80%99%E9%80%89%E7%A0%81.jpg" alt="候选码.jpg"><br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E4%B8%BB%E7%A0%81.jpg" alt="主码.jpg"><br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E4%B8%BB%E5%B1%9E%E6%80%A7.jpg" alt="主属性.jpg"></p>
+<h2 id="13-外码是什么？"><a href="#13-外码是什么？" class="headerlink" title="13 外码是什么？"></a>13 外码是什么？</h2><p>一个非常好理解的概念。<br><img src="https://img.lbwnb.vip/2021/11/2021-11-15/%E5%A4%96%E7%A0%81.jpg" alt="外码.jpg"></p>
+<h2 id="14-关系模型完整性？"><a href="#14-关系模型完整性？" class="headerlink" title="14 关系模型完整性？"></a>14 关系模型完整性？</h2><p>实体完整性：主码不能为空值。<br>参照完整性：关系中一个外码与另一个关系中主码一一对应，则不能出现不存在对应的情况，可以为空值。<br>用户自定义完整性：用户自己设定的完整性规则。</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
