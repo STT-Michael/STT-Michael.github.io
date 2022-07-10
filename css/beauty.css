@@ -69,7 +69,7 @@
 
 /*修改颜色值*/
 /*最近文章卡片*/
-/* #recent-posts>.recent-post-item,.layout_page>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post {
+#recent-posts>.recent-post-item,.layout_page>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post {
     background: var(--light_bg_color)
   }
   
@@ -82,9 +82,9 @@
   }
   
   :root{
-  --card-bg: #ecf0f6df;
-  --light_bg_color: #f8fefff0
-  } */
+  --card-bg: #ecf0f6df; 
+  --light_bg_color: rgba(248, 250, 255, 0.95);
+  }
 
   /* 滚动条 */
 ::-webkit-scrollbar {
